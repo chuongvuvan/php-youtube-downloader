@@ -43,7 +43,7 @@ function curl($url = '')
 /**
  * Get link download from Youtube
  * @param string $videoId
- * @return array
+ * @return array|null
  */
 function get_link_download_from_youtube($videoId = '')
 {
@@ -68,9 +68,5 @@ function get_link_download_from_youtube($videoId = '')
             return $videoUrls;
         }
     }
-    return array();
+    return null;
 }
-echo "<pre>";
-var_dump(get_link_download_from_youtube('w2nfX8KxMn8'));
-echo "</pre>";
-
